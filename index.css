@@ -9,6 +9,7 @@ body {
   color: #444;
   text-align: center;
   line-height: 1.5;
+  margin: 0;
 }
 
 nav,
@@ -24,16 +25,35 @@ nav {
   right: 0;
   z-index: 10;
   display: flex;
-  flex: row;
   justify-content: space-between;
 }
 
 nav ul {
   display: flex;
+  padding-inline-start: 0;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 0 0 .5rem;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #444;
+}
+
+nav ul a:hover {
+  color: #fff
 }
 
 nav li {
   padding-right: 1em;
+}
+
+.nav-logo {
+  margin-left: 1em;
+  align-self: center;
+  font-weight: 700;
 }
 
 header {
