@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Summary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+  <nav role="navigation">
+    <div class='nav-logo'><a href="index.html">LeetRun</a></div>
+    <ul>
+      <li><a href="create-account.html">Create account</a></li>
+      <li><a href="login.html">Login / Logout</a></li>
+      <li><a href="" class="active">Summary</a></li>
+      <li><a href="leaderboard.html">Leaderboard</a></li>
+    </ul>
+
+  </nav>
+  <main role="main">
+    <header role="banner">
+      <h1>Summary</h1>
+    </header>
+
+    <section class="summary-stats">
+      <header>
+        <h2>Stats</h2>
+      </header>
+      <img src='https://placehold.it/600x300?text=line%20graph%20run%20frequency' alt='chart showing run frequency'/>
+      <h3>Personal Records</h3>
+      <ul>
+        <li>5k: 19:00</li>
+        <li>10k: 47:00</li>
+        <li>15k: N/A</li>
+        <li>25k: N/A</li>
+        <li>30k: N/A</li>
+        <li>half-marathon: N/A</li>
+        <li>marathon: N/A</li>
+      </ul>
+
+    </section>
+
+    <section class="summary-entries">
+        <header>
+          <h2>Runs</h2>
+        </header>
+
+        <label for="search">Search: </label>
+
+          <input name="search" id="search" placeholder="search by location" />
+      
+        <label for="filter">Filter by: </label>
+        <select name="filter" id="filter">
+          <option>distance</option>
+          <option>time</option>
+          <option>weather</option>
+          <option>terrain</option>
+          <option>race</option>
+        </select>
+        
+      <section>
+        <header>
+          <h3>Philadelphia, PA</h3>
+          <h3>01/01/2021</h3>
+        </header>
+  
+          <p><strong>Distance:</strong> 5k</p>
+          <p><strong>Time:</strong> 21:00</p>
+          <p><strong>Weather:</strong> Clear</p>
+          <p><strong>Terrain:</strong> Flat</p>
+          <p><strong>Race:</strong> N/A</p>
+          <p>
+            <strong>Notes:</strong> 
+            Training run. Felt sluggish at the start, but 
+            my stride opened up about 5 minutes in.
+          </p>
+          <button>Edit</button>
+          <button>Delete</button>
+      </section>
+  
+      <section>
+        <header>
+          <h3>Cinnaminson, NJ</h3>
+          <h3>12/31/2020</h3>
+        </header>
+        <button>Edit</button>
+        <button>Delete</button>
+      </section>
+  
+      <section>
+        <header>
+          <h3>HaddonField, NJ</h3>
+          <h3>12/26/2020</h3>
+        </header>
+        <button>Edit</button>
+        <button>Delete</button>
+      </section>
+  
+      <section>
+        <header>
+          <h3>Cinnaminson, NJ</h3>
+          <h3>12/31/2020</h3>
+        </header>
+        <button>Edit</button>
+        <button>Delete</button>
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>

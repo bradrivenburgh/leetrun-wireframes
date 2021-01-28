@@ -12,6 +12,11 @@ body {
   margin: 0;
 }
 
+p {
+  margin: 0;
+  padding: .5em;
+}
+
 nav,
 footer {
   padding: 1% 0;
@@ -19,11 +24,6 @@ footer {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
   display: flex;
   justify-content: space-between;
 }
@@ -44,6 +44,10 @@ nav a {
 
 nav ul a:hover {
   color: #fff
+}
+
+.active {
+  color:#fff;
 }
 
 nav li {
@@ -69,6 +73,15 @@ section {
 section:nth-child(even) {
   background-color: #ddd;
 }
+
+/* Landing page images */
+
+@media screen and (max-width: 599px) {
+  img {
+    max-width: 250px;
+  }  
+}
+
 
 /* Create Account */
 .create-account {
@@ -120,4 +133,30 @@ section:nth-child(even) {
 .login__buttons button {
   margin-top: 2em;
   margin-right: 1em;
+}
+
+/* Summary */
+
+.summary-entries header {
+  padding: 1em;
+}
+
+.summary-entries section {
+  padding: 0;
+  min-height: auto;
+}
+
+.summary-stats ul {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
+
+/* Leaderboard */
+.leaderboard-entry {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0;
 }
